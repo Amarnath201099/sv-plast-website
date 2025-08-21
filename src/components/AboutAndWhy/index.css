@@ -1,0 +1,41 @@
+.about-why-section {
+  padding: 60px 20px;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  background-color: transparent; /* Keep original webpage background */
+}
+
+.why-svplast,
+.about-us {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-svplast h3,
+.about-us h3 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.why-svplast p,
+.about-us p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .about-why-section {
+    grid-template-columns: 1fr;
+  }
+}

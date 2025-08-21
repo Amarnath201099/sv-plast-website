@@ -1,0 +1,13 @@
+.nav-bar-container {
+  padding: 10px 60px;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-nav a {
+  font-size: 18px;
+  font-weight: 600;
+}

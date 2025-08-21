@@ -1,0 +1,42 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+  color: #69bd50;
+}
+
+.footer-icon {
+  font-size: 20px;
+  color: #69bd50;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  color: #aaa;
+}
