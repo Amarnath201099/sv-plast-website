@@ -1,12 +1,28 @@
+import { useRef } from "react";
+import logo from "../../assets/logo.png";
 import "./index.css";
 
 const NavBar = () => {
+  const navRef = useRef();
+
+  const handleNavLinkClick = () => {
+    const navbarCollapse = navRef.current;
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      // Trigger Bootstrap's collapse
+      const collapse = new window.bootstrap.Collapse(navbarCollapse, {
+        toggle: false,
+      });
+      collapse.hide();
+    }
+  };
+
   return (
-    <div>
+    <header className="header-container">
       <nav className="navbar navbar-expand-lg navbar-light bg-none nav-bar-container">
         <div className="container-fluid">
           <a className="navbar-brand" href="#home">
-            Navbar
+            <img src={logo} alt="logo" className="logo" />
+            <span className="logo-text">PLAST</span>
           </a>
           <button
             className="navbar-toggler"
@@ -19,25 +35,41 @@ const NavBar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div
+            className="collapse navbar-collapse"
+            id="navbarNavAltMarkup"
+            ref={navRef}
+          >
             <div className="navbar-nav ms-auto">
-              <a className="nav-link" aria-current="page" href="#home">
+              <a className="nav-link" href="#home" onClick={handleNavLinkClick}>
                 Home
               </a>
-              <a className="nav-link" href="#mission-vision">
+              <a
+                className="nav-link"
+                href="#mission-vision"
+                onClick={handleNavLinkClick}
+              >
                 Our Mission
               </a>
-              <a className="nav-link" href="#our-work">
+              <a
+                className="nav-link"
+                href="#our-work"
+                onClick={handleNavLinkClick}
+              >
                 Our Work
               </a>
-              <a className="nav-link" href="#about-why">
+              <a
+                className="nav-link"
+                href="#about-why"
+                onClick={handleNavLinkClick}
+              >
                 About
               </a>
             </div>
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
