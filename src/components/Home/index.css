@@ -56,12 +56,51 @@
   /* Animation */
   animation: slideInRight 1.2s ease-out forwards;
 }
-.home-contact-btn {
-  background-color: #13951b;
-  color: #ffffff;
+
+.home-contact-container {
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+.home-contact-title {
+  margin-bottom: 15px;
+  font-size: 25px;
   font-weight: 600;
-  font-size: 16px;
-  margin: 10px 0px;
+}
+
+.home-contact-buttons {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+
+.home-contact-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.home-contact-button:hover {
+  transform: scale(1.08);
+}
+
+.home-phone-button {
+  color: #000;
+}
+
+.home-whatsapp-button {
+  background-color: #13951b;
+  color: #fff;
+}
+
+.home-contact-icon {
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {

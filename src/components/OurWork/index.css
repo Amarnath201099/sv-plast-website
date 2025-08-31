@@ -24,7 +24,7 @@
 }
 
 .our-work-heading {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 20px;
   margin-bottom: 30px;
   color: #333;
@@ -40,14 +40,26 @@
   .slide-img {
     height: 310px;
   }
+
+  .our-work-heading {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .our-work-section {
+    padding: 60px;
+  }
+
   .our-work-container {
     width: 760px;
   }
 
   .slide-img {
     height: 410px;
+  }
+
+  .our-work-heading {
+    font-size: 34px;
   }
 }

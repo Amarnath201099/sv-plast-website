@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import DownloadButton from "../DownloadButton";
 import logo from "../../assets/logo.png";
 import "./index.css";
 
@@ -67,6 +68,11 @@ const NavBar = () => {
               </a>
             </div>
           </div>
+          <DownloadButton
+            text={"Download Brochure"}
+            classNames={"d-none d-lg-block"}
+            style={{ fontSize: "14px" }}
+          />
         </div>
       </nav>
     </header>

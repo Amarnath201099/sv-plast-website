@@ -5,6 +5,7 @@ import MissionVision from "./components/MissionVision/index.js";
 import OurWork from "./components/OurWork/index.js";
 import AboutAndWhy from "./components/AboutAndWhy/index.js";
 import Footer from "./components/Footer/index.js";
+import ContactUs from "./components/ContactUs/index.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MissionVision />
       <OurWork />
       <AboutAndWhy />
+      <ContactUs />
       <Footer />
     </div>
   );
