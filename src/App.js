@@ -6,6 +6,7 @@ import OurWork from "./components/OurWork/index.js";
 import AboutAndWhy from "./components/AboutAndWhy/index.js";
 import Footer from "./components/Footer/index.js";
 import ContactUs from "./components/ContactUs/index.js";
+import FloatingContactBar from "./components/FloatingContactBar/index.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <OurWork />
       <AboutAndWhy />
       <ContactUs />
+      <FloatingContactBar />
       <Footer />
     </div>
   );

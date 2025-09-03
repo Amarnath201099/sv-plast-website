@@ -1,8 +1,10 @@
 .about-why-section {
-  padding: 60px 20px;
+  padding: 40px 20px;
+  padding-bottom: 20px;
   margin: auto;
   font-family: "Inter", sans-serif;
-  background-color: transparent; /* Keep original webpage background */
+  background-color: transparent;
+  scroll-margin-top: 60px;
 }
 
 .why-svplast,
@@ -34,15 +36,15 @@
 }
 
 /* Responsive layout for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .about-why-section {
-    grid-template-columns: 1fr;
+    padding: 40px 30px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .about-why-section {
-    padding: 60px 30px;
+    padding: 40px 30px;
   }
 
   .why-svplast h3,

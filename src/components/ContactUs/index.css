@@ -1,6 +1,10 @@
 /* ContactUs.css */
+.contact-us-section-container {
+  padding: 20px 40px;
+  scroll-margin-top: 100px;
+}
+
 .contact-us-container {
-  padding: 40px;
   margin: 0 auto;
   border-radius: 8px;
   font-family: "Inter", sans-serif;
@@ -39,15 +43,60 @@
   font-size: 16px;
 }
 
-@media screen and (min-width: 768px) {
-  .contact-us-container {
-    padding: 60px 50px;
-  }
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.map-container {
+  margin-top: 2rem;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-overlay-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  text-indent: -9999px; /* Hides text but keeps accessibility */
 }
 
 @media screen and (min-width: 768px) {
   .contact-us-container {
-    padding: 60px 60px;
+    padding: 20px 50px;
+  }
+
+  .map-wrapper {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-info {
+    width: 50%;
+  }
+
+  .map-container {
+    width: 45%;
+  }
+
+  .contact-us-container {
+    padding: 40px 60px;
   }
 
   .contact-us-title {

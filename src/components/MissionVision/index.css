@@ -72,6 +72,12 @@
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .vision-box {
+    width: 300px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .mission-vision-section {
     padding: 10px 60px;
@@ -85,5 +91,9 @@
   .mission p,
   .vision p {
     font-size: 18px;
+  }
+
+  .vision-box {
+    width: 285px;
   }
 }

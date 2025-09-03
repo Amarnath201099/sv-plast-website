@@ -6,14 +6,14 @@ import home_bag_img from "../../assets/home_bag_img.jpeg";
 import "./index.css";
 
 const handlePhoneClick = () => {
-  window.location.href = "tel:+911234567890";
+  window.location.href = "tel:+918885639687";
 };
 
 const handleWhatsAppClick = () => {
   const message = encodeURIComponent(
     "Hello, I'm interested in SV PLAST Gypsum Plaster. Please give me a call back at your convenience."
   );
-  window.open(`https://wa.me/911234567890?text=${message}`, "_blank");
+  window.open(`https://wa.me/919640735819?text=${message}`, "_blank");
 };
 
 const Home = () => (

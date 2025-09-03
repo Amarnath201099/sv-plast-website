@@ -7,16 +7,18 @@ const Footer = () => {
       <div className="footer-contact">
         <div className="footer-item">
           <FaEnvelope className="footer-icon" />
-          <a href="mailto:info@svplast.com">info@svplast.com</a>
+          <a href="mailto:svgypsymplaster@gmail.com">
+            svgypsymplaster@gmail.com
+          </a>
         </div>
         <div className="footer-item">
           <FaPhoneAlt className="footer-icon" />
-          <a href="tel:+9191234xxx89">+91 91234 xxx89</a>
+          <a href="tel:+918885639687">+91 88856 39687</a>
         </div>
         <div className="footer-item">
           <FaWhatsapp className="footer-icon" />
           <a
-            href="https://wa.me/9191234xxx89"
+            href="https://wa.me/919640735819"
             target="_blank"
             rel="noopener noreferrer"
           >

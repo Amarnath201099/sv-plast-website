@@ -66,6 +66,13 @@ const NavBar = () => {
               >
                 About
               </a>
+              <a
+                className="nav-link"
+                href="#contact-us"
+                onClick={handleNavLinkClick}
+              >
+                Contact Us
+              </a>
             </div>
           </div>
           <DownloadButton
