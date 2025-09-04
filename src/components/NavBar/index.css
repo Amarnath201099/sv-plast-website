@@ -43,6 +43,12 @@
   width: 20px;
 }
 
+.active-link {
+  color: #13951b !important;
+  font-weight: 600;
+  border-bottom: 2px solid #13951b;
+}
+
 @media screen and (min-width: 768px) {
   .nav-bar-container {
     padding: 10px 30px;
@@ -73,9 +79,9 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .nav-bar-container {
-    padding: 10px 60px;
+    padding: 10px 80px;
   }
 
   .logo {

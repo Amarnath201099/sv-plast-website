@@ -4,12 +4,11 @@
   margin: auto;
   font-family: "Inter", sans-serif;
   background-color: transparent;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 80px;
 }
 
 .why-svplast,
 .about-us {
-  background-color: white;
   padding: 30px;
   border-radius: 10px;
   display: flex;
@@ -44,7 +43,7 @@
 
 @media screen and (min-width: 1024px) {
   .about-why-section {
-    padding: 40px 30px;
+    padding: 40px 60px;
   }
 
   .why-svplast h3,

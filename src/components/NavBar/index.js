@@ -1,15 +1,16 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import DownloadButton from "../DownloadButton";
 import logo from "../../assets/logo.png";
 import "./index.css";
 
 const NavBar = () => {
   const navRef = useRef();
+  const [activelink, setActiveLink] = useState("home");
 
-  const handleNavLinkClick = () => {
+  const handleNavLinkClick = (linkName) => {
+    setActiveLink(linkName);
     const navbarCollapse = navRef.current;
     if (navbarCollapse && navbarCollapse.classList.contains("show")) {
-      // Trigger Bootstrap's collapse
       const collapse = new window.bootstrap.Collapse(navbarCollapse, {
         toggle: false,
       });
@@ -41,35 +42,49 @@ const NavBar = () => {
             id="navbarNavAltMarkup"
             ref={navRef}
           >
-            <div className="navbar-nav ms-auto">
-              <a className="nav-link" href="#home" onClick={handleNavLinkClick}>
+            <div className="navbar-nav ms-auto gap-1">
+              <a
+                className={`nav-link ${
+                  activelink === "home" ? "active-link" : ""
+                }`}
+                href="#home"
+                onClick={() => handleNavLinkClick("home")}
+              >
                 Home
               </a>
               <a
-                className="nav-link"
+                className={`nav-link ${
+                  activelink === "mission-vision" ? "active-link" : ""
+                }`}
                 href="#mission-vision"
-                onClick={handleNavLinkClick}
+                onClick={() => handleNavLinkClick("mission-vision")}
               >
                 Our Mission
               </a>
               <a
-                className="nav-link"
+                className={`nav-link ${
+                  activelink === "our-work" ? "active-link" : ""
+                }`}
                 href="#our-work"
-                onClick={handleNavLinkClick}
+                onClick={() => handleNavLinkClick("our-work")}
               >
                 Our Work
               </a>
               <a
-                className="nav-link"
+                className={`nav-link ${
+                  activelink === "about-why" ? "active-link" : ""
+                }`}
                 href="#about-why"
-                onClick={handleNavLinkClick}
+                onClick={() => handleNavLinkClick("about-why")}
               >
                 About
               </a>
               <a
-                className="nav-link"
+                className={`nav-link ${
+                  activelink === "contact-us" ? "active-link" : ""
+                }`}
                 href="#contact-us"
-                onClick={handleNavLinkClick}
+                onClick={() => handleNavLinkClick("contact-us")}
               >
                 Contact Us
               </a>
