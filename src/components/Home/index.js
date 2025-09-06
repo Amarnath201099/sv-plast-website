@@ -1,8 +1,7 @@
-import React from "react";
 import DownloadButton from "../DownloadButton";
 import { FiPhone } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-import home_bag_img from "../../assets/home_bag_img.jpeg";
+import home_bag_img from "../../assets/home_bag_img.png";
 import "./index.css";
 
 const handlePhoneClick = () => {
@@ -20,8 +19,10 @@ const Home = () => (
   <section id="home">
     <div className="home-container">
       <div className="info-container">
-        <h1 className="home-heading">SV PLAST</h1>
-        <h2 className="home-heading-2">GYPSUM PLASTER</h2>
+        <h1 className="home-heading d-flex flex-column">
+          SV PLAST
+          <span className="home-heading-2">GYPSUM PLASTER</span>
+        </h1>
 
         <div className="home-contact-container">
           <h3 className="home-contact-title">Contact Us</h3>
