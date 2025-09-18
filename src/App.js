@@ -31,7 +31,7 @@ function App() {
           content="Faster, smoother, and greener plastering solution imported from Iran. Available across India."
         />
         <meta property="og:image" content="/logo_icon.png" />
-        <meta property="og:url" content="https://svplast.in" />
+        <meta property="og:url" content="https://svplast.co" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
