@@ -23,7 +23,7 @@ const FloatingContactBar = () => {
       </a>
 
       <a
-        href="https://maps.app.goo.gl/JF9QSAeCQ84QVPLW7"
+        href="https://maps.app.goo.gl/XaLU2xvubjNqQg9D8"
         className="contact-icon location"
         title="Find Us"
         target="_blank"
