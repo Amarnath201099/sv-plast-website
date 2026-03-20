@@ -91,7 +91,8 @@
 .video-carousel-wrapper {
   position: relative; /* This is the anchor for your absolute arrows! */
   width: 100%;
-  max-width: 480px;
+  max-width: 360px;
+  max-height: 640px;
   margin: 0 auto; /* Keeps the carousel centered */
 }
 
