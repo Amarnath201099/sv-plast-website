@@ -1,0 +1,141 @@
+/* SECTION */
+.video-section {
+  padding: 20px 20px 0px 20px ;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADING */
+.video-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* CAROUSEL */
+.video-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* THE SLIDING TRACK */
+.video-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out; /* Controls the slide speed */
+}
+
+/* SLIDE */
+.video-slide {
+  min-width: 100%; /* Forces each slide to be exactly as wide as the container */
+  flex-shrink: 0;  /* Prevents the flexbox from squishing the videos */
+  padding: 0 5px;  /* Optional: adds a tiny gap between slides if you want */
+  box-sizing: border-box;
+}
+
+/* VIDEO BOX */
+.video-player-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* DOTS */
+.video-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+
+/* ARROWS */
+/* ARROWS */
+.video-arrow {
+  position: absolute;
+  top: 50%;
+  /* 👉 Add translateZ(0) to force arrows to the very top layer */
+  transform: translateY(-50%) translateZ(0); 
+  z-index: 9999; /* Bump this up just to be safe */
+  font-size: 22px;
+  color: white;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* WRAPPER (This was missing!) */
+.video-carousel-wrapper {
+  position: relative; /* This is the anchor for your absolute arrows! */
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto; /* Keeps the carousel centered */
+}
+
+/* SHOW ON HOVER */
+/* 👉 Change the trigger to .video-section so the iframe can't block it */
+.video-section:hover .video-arrow {
+  opacity: 1;
+}
+
+/* POSITION */
+.video-arrow.prev {
+  left: 10px;
+}
+
+.video-arrow.next {
+  right: 10px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .video-carousel-wrapper {
+    max-width: 550px;
+  }
+
+  .video-player-box {
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-heading {
+    font-size: 30px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .video-section {
+    padding: 60px 60px 0px 60px;
+  }
+
+  .video-carousel-wrapper {
+    max-width: 760px;
+  }
+
+  .video-heading {
+    font-size: 34px;
+  }
+}
