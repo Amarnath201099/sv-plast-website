@@ -55,6 +55,7 @@ const ContactUs = () => {
           <div className="map-container">
             <div className="map-wrapper">
               <iframe
+              title="Google Maps Location"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3808.5018620607416!2d78.63299164921045!3d17.33956758110735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba02735778597%3A0x54fddd547d63675!2s8JQJ%2BRXX%2C%20Shivshankar%20Nagar%2C%20Kuntloor%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1756905721302!5m2!1sen!2sin"
                 width="100%"
                 height="450"
@@ -64,6 +65,7 @@ const ContactUs = () => {
               ></iframe>
 
               <a
+              aria-label="google maps page"
                 href="https://maps.app.goo.gl/JF9QSAeCQ84QVPLW7"
                 target="_blank"
                 rel="noopener noreferrer"
