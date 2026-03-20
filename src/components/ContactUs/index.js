@@ -20,8 +20,7 @@ const ContactUs = () => {
               <div className="contact-details">
                 <h4>Our Address</h4>
                 <p>
-                  Ratna Colony, Road No - 05, Kuntloor, Hayathnagar, R.R. Dist,
-                  Telangana - 501505
+                  Pasumamula Road, Kuntloor, Hayathnagar, R.R. District, Telangana – 501505
                 </p>
               </div>
             </div>
@@ -55,8 +54,8 @@ const ContactUs = () => {
           <div className="map-container">
             <div className="map-wrapper">
               <iframe
-              title="Google Maps Location"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3808.5018620607416!2d78.63299164921045!3d17.33956758110735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba02735778597%3A0x54fddd547d63675!2s8JQJ%2BRXX%2C%20Shivshankar%20Nagar%2C%20Kuntloor%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1756905721302!5m2!1sen!2sin"
+                title="Google Maps Location"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3808.394707409353!2d78.62815447516391!3d17.344729983535117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDIwJzQxLjAiTiA3OMKwMzcnNTAuNiJF!5e0!3m2!1sen!2sin!4v1774000136863!5m2!1sen!2sin"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
@@ -66,7 +65,7 @@ const ContactUs = () => {
 
               <a
               aria-label="google maps page"
-                href="https://maps.app.goo.gl/JF9QSAeCQ84QVPLW7"
+                href="https://maps.app.goo.gl/XaLU2xvubjNqQg9D8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="map-overlay-link"
